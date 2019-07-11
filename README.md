@@ -30,7 +30,7 @@ $ npm start
 
 ## In Future:
 
-This is a simple app which could be improve in future.  Here are just a few of the ways to improve the functionality and userinterface for this app. 
+This is a simple app which could be improved in future.  Here are just a few of the ways to improve the functionality and userinterface for this app. 
 - Thorough Testing
 - A way for users to login securely 
 - A Database to store the messages for future retrieval
