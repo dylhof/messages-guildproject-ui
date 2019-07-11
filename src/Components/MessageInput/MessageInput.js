@@ -14,7 +14,7 @@ class MessageInput extends Component{
     this.setState({message: event.target.value})
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
     const newMessage = {
       id: uuid(),
@@ -28,8 +28,9 @@ class MessageInput extends Component{
         'Content-Type': 'application/json'
       }
     }
-    FetchCall('http://localhost:3001/chat', options);
+    await FetchCall('http://localhost:3001/chat', options);
     this.setState({message: ''})
+    this.props.getNewMessages()
   }
 
   render(){
